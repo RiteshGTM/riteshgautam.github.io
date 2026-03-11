@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritesh Gautam — Java Backend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- BACKGROUND GRID + ORBS -->
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- NAV -->
+    <nav class="nav" id="navbar">
+      <div class="nav-logo">RG<span class="accent">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          ◑
+        </button>
+        <a href="#" class="btn-resume" id="resumeDownload">Resume ↓</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+        <li><a href="#certifications" onclick="closeMobileMenu()">Certs</a></li>
+        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title">
+          <span class="line-1">Ritesh</span>
+          <span class="line-2">Gautam<span class="accent">.</span></span>
+        </h1>
+        <p class="hero-role">
+          Java Backend Developer <span class="separator">—</span> Full Stack
+          Learner
+        </p>
+        <p class="hero-desc">
+          Building secure, production-style REST APIs with Spring Boot &amp;
+          Spring Security. Engineering student at
+          <strong>College of Engineering, Mumbai</strong>. Moving toward Full
+          Stack + AI.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span
+            ><span class="stat-unit">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="8">0</span
+            ><span class="stat-unit">.2 GPA</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="glass-card avatar-card">
+          <div class="avatar-ring">
+            <div class="avatar-inner">RG</div>
+          </div>
+          <div class="avatar-info">
+            <span class="avatar-name">Ritesh Gautam</span>
+            <span class="avatar-title">Java Developer · Mumbai</span>
+          </div>
+          <div class="tech-stack-pills">
+            <span class="pill">Spring Boot</span>
+            <span class="pill">JWT</span>
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">REST API</span>
+            <span class="pill">Spring Security</span>
+          </div>
+          <div class="card-status">
+            <span class="status-dot"></span> Open to internships
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01 — Skills</span>
+          <h2 class="section-title">
+            Technical <span class="accent">Arsenal</span>
+          </h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 — Projects</span>
+          <h2 class="section-title">
+            Built <span class="accent">Things</span>
+          </h2>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 — Certifications</span>
+          <h2 class="section-title">
+            Certified <span class="accent">Learning</span>
+          </h2>
+        </div>
+        <div class="certs-grid" id="certsGrid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 — Contact</span>
+          <h2 class="section-title">
+            Let's <span class="accent">Connect</span>
+          </h2>
+        </div>
+        <div class="contact-wrapper">
+          <div class="glass-card contact-card">
+            <p class="contact-text">
+              Open to internships, collaborations, and backend / full-stack
+              opportunities. Shoot me a message or reach out directly.
+            </p>
+            <div class="contact-links" id="contactLinks"></div>
+          </div>
+          <div class="glass-card contact-form-wrapper">
+            <form
+              class="contact-form"
+              id="contactForm"
+              onsubmit="handleFormSubmit(event)"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="formName"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="formEmail"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="formMsg"
+                  placeholder="Your Message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary full-width">
+                Send Message →
+              </button>
+              <p class="form-note" id="formStatus"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Designed &amp; built by <strong>Ritesh Gautam</strong> ·
+          <span id="footerYear"></span>
+        </p>
+        <p class="footer-sub">Java Backend Developer · Mumbai, India</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
