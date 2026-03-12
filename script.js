@@ -137,16 +137,21 @@ const CONFIG = {
 
   // ── Contact Links ─────────────────────────────────────────
   contactLinks: [
-    { icon: "✉️", label: "ritesh@gmail.com", href: "mailto:ritesh@gmail.com" },
+    {
+      icon: "✉️",
+      label: "ritesh.gtmcs@gmail.com",
+      // href: "mailto:ritesh@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&to=ritesh.gtmcs@gmail.com",
+    },
     {
       icon: "💼",
-      label: "linkedin.com/in/riteshgautam",
-      href: "https://linkedin.com/in/riteshgautam",
+      label: "linkedin",
+      href: "https://www.linkedin.com/in/ritesh-gautam-828804290/",
     },
     {
       icon: "🐙",
-      label: "github.com/riteshgautam",
-      href: "https://github.com/riteshgautam",
+      label: "github.com/RiteshGTM",
+      href: "https://github.com/RiteshGTM",
     },
   ],
 };
