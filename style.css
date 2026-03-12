@@ -710,10 +710,11 @@ strong {
 }
 
 .section-header {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin-bottom: 48px;
 }
 
-.section-tag {
+/* .section-tag {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -721,6 +722,15 @@ strong {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 12px;
+} */
+
+.section-num {
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-right: 4px;
 }
 
 .section-title {
@@ -829,6 +839,7 @@ strong {
   mask-composite: exclude;
   opacity: 0;
   transition: opacity var(--t);
+  pointer-events: none;
 }
 
 .project-card:hover::before {
