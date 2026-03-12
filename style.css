@@ -25,11 +25,11 @@
   --surface-border: rgba(255, 255, 255, 0.08);
   --surface-hover: rgba(255, 255, 255, 0.07);
   --text-primary: #e8edf5;
-  /* --text-secondary: #8b95a6; */
-  --text-secondary: #b0bdd0;
+  /* --text-secondary: #b0bdd0; */
+  --text-secondary: #c8d3e0;
   --text-muted: #4a5568;
   --orb-1: rgba(0, 245, 160, 0.12);
-  --orb-2: rgba(0, 150, 255, 0.10);
+  --orb-2: rgba(0, 150, 255, 0.1);
   --orb-3: rgba(180, 0, 255, 0.08);
   --grid-color: rgba(255, 255, 255, 0.03);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -40,8 +40,8 @@
   --scroll-thumb: rgba(0, 245, 160, 0.3);
 
   /* Typography */
-  --font-display: 'Syne', sans-serif;
-  --font-mono: 'Space Mono', monospace;
+  --font-display: "Syne", sans-serif;
+  --font-mono: "Space Mono", monospace;
 
   /* Spacing */
   --nav-h: 72px;
@@ -97,12 +97,14 @@ html {
 
 body {
   font-family: var(--font-mono);
-  font-weight: 500;
+  font-weight: 400;
   background: var(--bg);
   color: var(--text-primary);
   line-height: 1.7;
   overflow-x: hidden;
-  transition: background var(--t), color var(--t);
+  transition:
+    background var(--t),
+    color var(--t);
 }
 
 ::-webkit-scrollbar {
@@ -217,7 +219,10 @@ strong {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: var(--shadow);
-  transition: background var(--t), border-color var(--t), box-shadow var(--t);
+  transition:
+    background var(--t),
+    border-color var(--t),
+    box-shadow var(--t);
 }
 
 .glass-card:hover {
@@ -237,7 +242,10 @@ strong {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: transform var(--t), box-shadow var(--t), background var(--t);
+  transition:
+    transform var(--t),
+    box-shadow var(--t),
+    background var(--t);
   letter-spacing: 0.03em;
 }
 
@@ -288,7 +296,9 @@ strong {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--surface-border);
-  transition: background var(--t), border-color var(--t);
+  transition:
+    background var(--t),
+    border-color var(--t);
 }
 
 .nav.scrolled {
@@ -317,7 +327,7 @@ strong {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -419,7 +429,9 @@ strong {
   color: var(--text-secondary);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  transition: color var(--t), background var(--t);
+  transition:
+    color var(--t),
+    background var(--t);
 }
 
 .mobile-menu a:hover {
@@ -511,7 +523,7 @@ strong {
 
 .hero-desc {
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 700;
   /* ADD THIS */
   color: var(--text-secondary);
   max-width: 500px;
@@ -801,14 +813,19 @@ strong {
 }
 
 .project-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: var(--radius);
   border: 1px solid transparent;
   background: linear-gradient(135deg, var(--accent-glow), transparent) border-box;
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
   mask-composite: exclude;
   opacity: 0;
   transition: opacity var(--t);
@@ -863,8 +880,7 @@ strong {
 
 .project-desc {
   font-size: 0.83rem;
-  font-weight: 500;
-  /* ADD THIS */
+  font-weight: 700;
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -878,7 +894,7 @@ strong {
 
 .project-highlights li {
   font-size: 0.78rem;
-  font-weight: 500;
+  font-weight: 700;
   /* ADD THIS */
   color: var(--text-secondary);
   padding-left: 16px;
@@ -887,7 +903,7 @@ strong {
 }
 
 .project-highlights li::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--accent);
@@ -979,7 +995,7 @@ strong {
 
 .contact-text {
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
   /* ADD THIS */
   color: var(--text-secondary);
   line-height: 1.8;
@@ -1048,7 +1064,9 @@ strong {
   border-radius: var(--radius-sm);
   outline: none;
   resize: vertical;
-  transition: border-color var(--t), background var(--t);
+  transition:
+    border-color var(--t),
+    background var(--t);
 }
 
 .form-group input::placeholder,
@@ -1093,7 +1111,9 @@ strong {
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 .reveal.visible {
