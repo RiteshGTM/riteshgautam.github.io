@@ -390,6 +390,27 @@ strong {
   color: #080c10;
 }
 
+/* Hero Resume button */
+.btn-resume-hero {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 12px 28px;
+  border-radius: 8px;
+  letter-spacing: 0.03em;
+  transition: all var(--t);
+}
+
+.btn-resume-hero:hover {
+  background: var(--accent);
+  color: #080c10;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--accent-glow);
+}
+
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -479,7 +500,6 @@ strong {
 }
 
 @keyframes pulse-dot {
-
   0%,
   100% {
     box-shadow: 0 0 0 0 var(--accent-glow);
@@ -620,7 +640,6 @@ strong {
 }
 
 @keyframes ring-pulse {
-
   0%,
   100% {
     box-shadow: 0 0 0 0 var(--accent-glow);
@@ -828,7 +847,8 @@ strong {
   inset: 0;
   border-radius: var(--radius);
   border: 1px solid transparent;
-  background: linear-gradient(135deg, var(--accent-glow), transparent) border-box;
+  background: linear-gradient(135deg, var(--accent-glow), transparent)
+    border-box;
   -webkit-mask:
     linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);

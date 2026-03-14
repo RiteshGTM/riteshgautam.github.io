@@ -247,11 +247,20 @@ function renderContact() {
 
 // Resume download
 function setupResume() {
+  // Navbar resume button (desktop)
   const btn = document.getElementById("resumeDownload");
-  if (!btn) return;
-  btn.href = CONFIG.resumeFile;
-  btn.setAttribute("download", CONFIG.resumeFile);
+  if (btn) {
+    btn.href = CONFIG.resumeFile;
+    btn.setAttribute("download", CONFIG.resumeFile);
+  }
+  // Hero resume button (visible on all devices)
+  const heroBtn = document.getElementById("heroResumeDownload");
+  if (heroBtn) {
+    heroBtn.href = CONFIG.resumeFile;
+    heroBtn.setAttribute("download", CONFIG.resumeFile);
+  }
 }
+
 
 // Footer year
 function setYear() {

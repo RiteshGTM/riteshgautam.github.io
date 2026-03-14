@@ -1,132 +1,133 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritesh Gautam — Java Backend Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <!-- BACKGROUND GRID + ORBS -->
-    <div class="bg-grid"></div>
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritesh Gautam — Java Backend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <!-- NAV -->
-    <nav class="nav" id="navbar">
-      <div class="nav-logo">RG<span class="accent">.</span></div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <!-- <li><a href="#certifications">Certs</a></li> -->
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="nav-right">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          ◑
-        </button>
-        <a href="#" class="btn-resume" id="resumeDownload">Resume ↓</a>
-      </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-    </nav>
+<body>
+  <!-- BACKGROUND GRID + ORBS -->
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
-        <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
-        <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
-        <!-- <li><a href="#certifications" onclick="closeMobileMenu()">Certs</a></li> -->
-        <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
-      </ul>
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">RG<span class="accent">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <!-- <li><a href="#certifications">Certs</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        ◑
+      </button>
+      <a href="#" class="btn-resume" id="resumeDownload">Resume ↓</a>
     </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+  </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="about">
-      <div class="hero-content">
-        <div class="hero-tag">
-          <span class="tag-dot"></span>
-          Available for opportunities
-        </div>
-        <h1 class="hero-title">
-          <span class="line-1">Ritesh</span>
-          <span class="line-2">Gautam<span class="accent">.</span></span>
-        </h1>
-        <p class="hero-role">
-          Java Backend Developer <span class="separator">—</span> Full Stack
-          Developer
-        </p>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+      <!-- <li><a href="#certifications" onclick="closeMobileMenu()">Certs</a></li> -->
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
 
-        <!-- <strong> for bold with blue color -->
-        <p class="hero-desc">
-          Building secure, production-style REST APIs with Spring Boot &amp;
-          Spring Security. Engineering student. Focused on backend architecture,
-          API security, and scalable REST services.
-        </p>
-
-        <div class="hero-cta">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-secondary">Get in Touch</a>
-        </div>
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Available for opportunities
       </div>
-      <div class="hero-visual">
-        <div class="glass-card avatar-card">
-          <div class="avatar-ring">
-            <div class="avatar-inner">RG</div>
-          </div>
-          <div class="avatar-info">
-            <span class="avatar-name">Ritesh Gautam</span>
-            <span class="avatar-title">Java Developer · Mumbai</span>
-          </div>
-          <div class="tech-stack-pills">
-            <span class="pill">Spring Boot</span>
-            <span class="pill">JWT</span>
-            <span class="pill">PostgreSQL</span>
-            <span class="pill">REST API</span>
-            <span class="pill">Spring Security</span>
-          </div>
-          <!-- <div class="card-status">
+      <h1 class="hero-title">
+        <span class="line-1">Ritesh</span>
+        <span class="line-2">Gautam<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-role">
+        Java Backend Developer <span class="separator">—</span> Full Stack
+        Developer
+      </p>
+
+      <!-- <strong> for bold with blue color -->
+      <p class="hero-desc">
+        Building secure, production-style REST APIs with Spring Boot &amp;
+        Spring Security. Engineering student. Focused on backend architecture,
+        API security, and scalable REST services.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+        <a href="#" class="btn-resume-hero" id="heroResumeDownload">Resume ↓</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glass-card avatar-card">
+        <div class="avatar-ring">
+          <div class="avatar-inner">RG</div>
+        </div>
+        <div class="avatar-info">
+          <span class="avatar-name">Ritesh Gautam</span>
+          <span class="avatar-title">Java Developer · Mumbai</span>
+        </div>
+        <div class="tech-stack-pills">
+          <span class="pill">Spring Boot</span>
+          <span class="pill">JWT</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">REST API</span>
+          <span class="pill">Spring Security</span>
+        </div>
+        <!-- <div class="card-status">
             <span class="status-dot"></span> Open to internships
           </div> -->
-        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-num">01 —</span> Technical Skills
-          </h2>
-        </div>
-        <div class="skills-grid" id="skillsGrid"></div>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-num">01 —</span> Technical Skills
+        </h2>
       </div>
-    </section>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-num">02 —</span> My Projects
-          </h2>
-        </div>
-        <div class="projects-grid" id="projectsGrid"></div>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-num">02 —</span> My Projects
+        </h2>
       </div>
-    </section>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
 
-    <!-- CERTIFICATIONS -->
-    <!-- <section class="section" id="certifications">
+  <!-- CERTIFICATIONS -->
+  <!-- <section class="section" id="certifications">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">03 — Certifications</span>
@@ -138,73 +139,55 @@
       </div>
     </section> -->
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">
-            <span class="section-num">03 —</span> Contact Me
-          </h2>
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-num">03 —</span> Contact Me
+        </h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="glass-card contact-card">
+          <p class="contact-text">
+            Open to internships, collaborations, and backend / full-stack
+            opportunities. Shoot me a message or reach out directly.
+          </p>
+          <div class="contact-links" id="contactLinks"></div>
         </div>
-        <div class="contact-wrapper">
-          <div class="glass-card contact-card">
-            <p class="contact-text">
-              Open to internships, collaborations, and backend / full-stack
-              opportunities. Shoot me a message or reach out directly.
-            </p>
-            <div class="contact-links" id="contactLinks"></div>
-          </div>
-          <div class="glass-card contact-form-wrapper">
-            <form
-              class="contact-form"
-              id="contactForm"
-              onsubmit="handleFormSubmit(event)"
-            >
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="formName"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="formEmail"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="formMsg"
-                  placeholder="Your Message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn-primary full-width">
-                Send Message →
-              </button>
-              <p class="form-note" id="formStatus"></p>
-            </form>
-          </div>
+        <div class="glass-card contact-form-wrapper">
+          <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <input type="text" id="formName" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="formEmail" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea id="formMsg" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              Send Message →
+            </button>
+            <p class="form-note" id="formStatus"></p>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container">
-        <p>
-          Designed &amp; built by <strong>Ritesh Gautam</strong> ·
-          <span id="footerYear"></span>
-        </p>
-        <p class="footer-sub">Java Backend Developer · India</p>
-      </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Designed &amp; built by <strong>Ritesh Gautam</strong> ·
+        <span id="footerYear"></span>
+      </p>
+      <p class="footer-sub">Java Backend Developer · India</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
